@@ -146,9 +146,6 @@ class Vector3(GDObject):
 
 class Color(GDObject):
     def __init__(self, r: float, g: float, b: float, a: float) -> None:
-        assert 0 <= r <= 1
-        assert 0 <= g <= 1
-        assert 0 <= b <= 1
         assert 0 <= a <= 1
         super().__init__("Color", r, g, b, a)
 
